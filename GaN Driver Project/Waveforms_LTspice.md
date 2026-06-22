@@ -12,7 +12,7 @@ The EPC2019 GaN transistor was driven using a 5 V pulse source through a gate re
 
 ### Simulation Circuit
 
-![Simulation Circuit](INSERT_CIRCUIT_SCREENSHOT_LINK_HERE)
+![Simulation Circuit](https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/circuit.png?raw=true)
 
 ---
 
@@ -29,7 +29,7 @@ The following gate resistance values were investigated:
 
 ### Switching Waveforms for Different Gate Resistances
 
-![Gate Resistance Sweep](INSERT_RG_SWEEP_SCREENSHOT_LINK_HERE)
+![Gate Resistance Sweep](https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/Screenshot%202026-06-22%20at%207.26.43%20PM.png?raw=true)
 
 ### Results
 
@@ -62,7 +62,7 @@ The following inductance values were examined:
 
 ### Switching Waveforms for Different Inductance Values
 
-![Inductance Sweep](INSERT_LG_SWEEP_SCREENSHOT_LINK_HERE)
+![Inductance Sweep](https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/Screenshot%202026-06-22%20at%207.27.21%20PM.png?raw=true)
 
 ### Discussion
 
