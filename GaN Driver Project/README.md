@@ -1,6 +1,6 @@
 # High-Speed Low-Side Gate Driver Board for eGaN® FETs
 
-## 📌 Project Overview
+## Project Overview
 This project presents a high-performance, compact hardware platform optimized for driving Enhancement-mode Gallium Nitride (eGaN) transistors. Due to their ultra-fast switching transitions ($dv/dt$ and $di/dt$), GaN FETs are highly susceptible to parasitic loop inductance, which induces gate ringing and overvoltage spikes. 
 
 This design implements a highly optimized, low-inductance coplanar PCB layout using the **Texas Instruments LMG1020** high-speed gate driver (WLCSP package) to drive an **EPC2019 GaN FET** ($200\text{V}$, $8.5\text{A}$ power stage).
@@ -19,9 +19,9 @@ This design implements a highly optimized, low-inductance coplanar PCB layout us
 
 ---
 
-## 📐 PCB Layout Optimization & Parasitic Mitigation
+## PCB Layout Optimization & Parasitic Mitigation
 
-### 🖼️ KiCad 2-Layer PCB Component Layout
+### KiCad 2-Layer PCB Component Layout
 ![](https://github.com)
 
 ### Layout Engineering Strategies Implemented:
