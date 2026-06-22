@@ -87,7 +87,7 @@ The PCB was designed with the following considerations:
 
 ### PCB Layout
 
-![PCB Layout](INSERT_PCB_LAYOUT_IMAGE_LINK_HERE)
+![PCB Layout](https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/Screenshot%202026-06-22%20at%2012.51.15%20PM.png?raw=true)
 
 The simulation results validate these layout choices. Even a few nanohenries of parasitic inductance significantly affect switching performance, highlighting the importance of compact component placement and careful routing.
 
