@@ -10,7 +10,7 @@ This design implements a highly optimized, low-inductance coplanar PCB layout us
 ##  Schematic Circuit Analysis
 
 ### KiCad Schematic Diagram
-![](https://github.com)
+![](https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/Screenshot%202026-06-22%20at%201.07.44%20PM.png?raw=true)
 
 ### Circuit Implementations & Design Choices:
 * **Asymmetrical Drive Topology:** The `OUTH` (Pin A2) and `OUTL` (Pin B2) of the LMG1020 are routed independently through individual $2\,\Omega$ resistors (`R1` and `R2`). This configuration enables distinct tuning of the turn-on and turn-off paths, suppressing $dv/dt$ induced turn-on problems.
@@ -22,10 +22,10 @@ This design implements a highly optimized, low-inductance coplanar PCB layout us
 ## PCB Layout Optimization & Parasitic Mitigation
 
 ### KiCad 2-Layer PCB Component Layout
-![https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/Screenshot%202026-06-22%20at%2012.51.15%20PM.png?raw=true](https://github.com)
+![](https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/Screenshot%202026-06-22%20at%2012.51.15%20PM.png?raw=true)
 
 ### Layout Engineering Strategies Implemented:
 * **In-Line Symmetrical Floorplan:** As visible in the layout, the driver (`U1`), split gate resistors (`R1` / `R2`), and the GaN FET (`Q1`) are arranged linearly. This keeps the gate loop paths parallel and of identical length, reducing structural loop inductance.
 * **Kelvin Source Return Path:** The ground pads of the drive loop are star-connected directly back to the physical source pad (Pin 3) of the EPC2019. This isolates the gate return signal from heavy power-stage ground noise.
-* **Minimizing Trace Inductance ($L_{\text{trace}}$):** Traces connecting `OUTH`/`OUTL` through the $1\,\Omega$ SMD components to the gate (Pin 1) are kept short and thick, directly mitigating inductive $V_{GS}$ voltage overshoots during sub-nanosecond switching.
+* **Minimizing Trace Inductance ($L_{\text{trace}}$):** Traces connecting `OUTH`/`OUTL` through the $2\,\Omega$ SMD components to the gate (Pin 1) are kept short and thick, directly mitigating inductive $V_{GS}$ voltage overshoots during sub-nanosecond switching.
 * **Thermal and Ground Coplanar Pour:** High-density copper fills tie the surrounding ground networks cleanly together, acting as a low-impedance path to shield sensitive signaling nodes from EMI.
