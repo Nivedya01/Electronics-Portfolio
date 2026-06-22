@@ -22,7 +22,7 @@ This design implements a highly optimized, low-inductance coplanar PCB layout us
 ## PCB Layout Optimization & Parasitic Mitigation
 
 ### KiCad 2-Layer PCB Component Layout
-![](https://github.com)
+![https://github.com/Nivedya01/Electronics-Portfolio/blob/main/images/Screenshot%202026-06-22%20at%2012.51.15%20PM.png?raw=true](https://github.com)
 
 ### Layout Engineering Strategies Implemented:
 * **In-Line Symmetrical Floorplan:** As visible in the layout, the driver (`U1`), split gate resistors (`R1` / `R2`), and the GaN FET (`Q1`) are arranged linearly. This keeps the gate loop paths parallel and of identical length, reducing structural loop inductance.
