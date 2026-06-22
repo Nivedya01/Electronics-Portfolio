@@ -7,13 +7,13 @@ This design implements a highly optimized, low-inductance coplanar PCB layout us
 
 ---
 
-## 🛠️ Schematic Circuit Analysis
+##  Schematic Circuit Analysis
 
-### 🖼️ KiCad Schematic Diagram
+### KiCad Schematic Diagram
 ![](https://github.com)
 
 ### Circuit Implementations & Design Choices:
-* **Asymmetrical Drive Topology:** The `OUTH` (Pin A2) and `OUTL` (Pin B2) of the LMG1020 are routed independently through individual $1\,\Omega$ resistors (`R1` and `R2`). This configuration enables distinct tuning of the turn-on and turn-off paths, suppressing $dv/dt$ induced turn-on problems.
+* **Asymmetrical Drive Topology:** The `OUTH` (Pin A2) and `OUTL` (Pin B2) of the LMG1020 are routed independently through individual $2\,\Omega$ resistors (`R1` and `R2`). This configuration enables distinct tuning of the turn-on and turn-off paths, suppressing $dv/dt$ induced turn-on problems.
 * **Ultra-Local High-Frequency Decoupling:** A $100\text{ nF}$ ceramic bypass capacitor (`C1`) is placed directly across `VDD` (Pin A1) and `GND` (Pin B1). This maintains a tight loop to provide instant transient charging current to the GaN gate.
 * **Signal and Power Routing Interfaces:** Dual 2-pin connectors (`Conn_01x02_Pin`) are utilized. `J1` delivers the high-speed PWM input signals (`IN+` and `IN-`), while `J2` interfaces directly with the drain and local source return path of the **EPC2019** (`Q1`).
 
